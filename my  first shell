@@ -1,0 +1,19 @@
+#!bin/bash
+employlist.txt
+for((i=0;  i<5;  i++))
+do
+echo "enter you name"
+read name
+
+echo"enter you age"
+read age
+
+echo "enter you address"
+read address
+
+echo"$name $age $address"
+mkdir $name $age $address
+cd $name $age $address
+touch$name $age $address
+echo "hello" $name $age $address
+cd.. 
